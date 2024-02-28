@@ -36,16 +36,18 @@ class MainActivity : AppCompatActivity() {
        binding.toggleButton.setOnClickListener {
             if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_HIDDEN) {
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                window.navigationBarColor = getColor(R.color.sheet)
             } else {
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+                window.navigationBarColor = getColor(R.color.white)
             }
         }
 
         binding.bb.setOnClickListener {
-            if (binding.textView.text == "Changed Text") {
+            if (binding.textView.text == "Successful!") {
                 binding.textView.text = "Bottom Sheet Behavior"
             } else {
-                binding.textView.text = "Changed Text"
+                binding.textView.text = "Successful!"
             }
         }
 
