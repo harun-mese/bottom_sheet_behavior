@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.bb.setOnClickListener {
             if (binding.textView.text == "Successful!") {
-                binding.textView.text = "Bottom Sheet Behavior"
+                binding.textView.text = "Bottom Sheet Behavior!!"
             } else {
                 binding.textView.text = "Successful!"
             }
