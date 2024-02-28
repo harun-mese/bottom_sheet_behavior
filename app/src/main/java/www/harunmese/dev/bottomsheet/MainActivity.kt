@@ -42,10 +42,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.bb.setOnClickListener {
-            if (binding.textView.text == "Harun Mese") {
+            if (binding.textView.text == "Changed Text") {
                 binding.textView.text = "Bottom Sheet Behavior"
             } else {
-                binding.textView.text = "Harun Mese"
+                binding.textView.text = "Changed Text"
             }
         }
 
